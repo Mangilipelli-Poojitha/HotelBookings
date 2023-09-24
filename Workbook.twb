@@ -1,0 +1,1266 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0522.2044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0522.2044)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='HotelBookings' path='/t/poojitha/workbooks' revision='1.0' site='poojitha' />
+  <preferences />
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='hotel_bookings' inline='true' name='federated.1czcpkf16xq75i10oq6kv12n12gn' version='18.1'>
+      <repository-location id='hotel_bookings' path='datasources' revision='1.0' />
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hotel_bookings' name='textscan.0g5he2x0egmsel10zf7pl1s0488s'>
+            <connection class='textscan' directory='Data/0pr4g9r15i3rjx1ghekun1sd5lfx' filename='hotel_bookings.csv' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0g5he2x0egmsel10zf7pl1s0488s' name='hotel_bookings.csv' table='[hotel_bookings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='hotel' ordinal='0' />
+            <column datatype='integer' name='is_canceled' ordinal='1' />
+            <column datatype='integer' name='lead_time' ordinal='2' />
+            <column datatype='integer' name='arrival_date_year' ordinal='3' />
+            <column datatype='string' name='arrival_date_month' ordinal='4' />
+            <column datatype='integer' name='arrival_date_week_number' ordinal='5' />
+            <column datatype='integer' name='arrival_date_day_of_month' ordinal='6' />
+            <column datatype='integer' name='stays_in_weekend_nights' ordinal='7' />
+            <column datatype='integer' name='stays_in_week_nights' ordinal='8' />
+            <column datatype='integer' name='adults' ordinal='9' />
+            <column datatype='integer' name='children' ordinal='10' />
+            <column datatype='integer' name='babies' ordinal='11' />
+            <column datatype='string' name='meal' ordinal='12' />
+            <column datatype='string' name='country' ordinal='13' />
+            <column datatype='string' name='market_segment' ordinal='14' />
+            <column datatype='string' name='distribution_channel' ordinal='15' />
+            <column datatype='integer' name='is_repeated_guest' ordinal='16' />
+            <column datatype='integer' name='previous_cancellations' ordinal='17' />
+            <column datatype='integer' name='previous_bookings_not_canceled' ordinal='18' />
+            <column datatype='string' name='reserved_room_type' ordinal='19' />
+            <column datatype='string' name='assigned_room_type' ordinal='20' />
+            <column datatype='integer' name='booking_changes' ordinal='21' />
+            <column datatype='string' name='deposit_type' ordinal='22' />
+            <column datatype='integer' name='agent' ordinal='23' />
+            <column datatype='integer' name='company' ordinal='24' />
+            <column datatype='integer' name='days_in_waiting_list' ordinal='25' />
+            <column datatype='string' name='customer_type' ordinal='26' />
+            <column datatype='real' name='adr' ordinal='27' />
+            <column datatype='integer' name='required_car_parking_spaces' ordinal='28' />
+            <column datatype='integer' name='total_of_special_requests' ordinal='29' />
+            <column datatype='string' name='reservation_status' ordinal='30' />
+            <column datatype='date' name='reservation_status_date' ordinal='31' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0g5he2x0egmsel10zf7pl1s0488s' name='hotel_bookings.csv' table='[hotel_bookings#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='hotel' ordinal='0' />
+            <column datatype='integer' name='is_canceled' ordinal='1' />
+            <column datatype='integer' name='lead_time' ordinal='2' />
+            <column datatype='integer' name='arrival_date_year' ordinal='3' />
+            <column datatype='string' name='arrival_date_month' ordinal='4' />
+            <column datatype='integer' name='arrival_date_week_number' ordinal='5' />
+            <column datatype='integer' name='arrival_date_day_of_month' ordinal='6' />
+            <column datatype='integer' name='stays_in_weekend_nights' ordinal='7' />
+            <column datatype='integer' name='stays_in_week_nights' ordinal='8' />
+            <column datatype='integer' name='adults' ordinal='9' />
+            <column datatype='integer' name='children' ordinal='10' />
+            <column datatype='integer' name='babies' ordinal='11' />
+            <column datatype='string' name='meal' ordinal='12' />
+            <column datatype='string' name='country' ordinal='13' />
+            <column datatype='string' name='market_segment' ordinal='14' />
+            <column datatype='string' name='distribution_channel' ordinal='15' />
+            <column datatype='integer' name='is_repeated_guest' ordinal='16' />
+            <column datatype='integer' name='previous_cancellations' ordinal='17' />
+            <column datatype='integer' name='previous_bookings_not_canceled' ordinal='18' />
+            <column datatype='string' name='reserved_room_type' ordinal='19' />
+            <column datatype='string' name='assigned_room_type' ordinal='20' />
+            <column datatype='integer' name='booking_changes' ordinal='21' />
+            <column datatype='string' name='deposit_type' ordinal='22' />
+            <column datatype='integer' name='agent' ordinal='23' />
+            <column datatype='integer' name='company' ordinal='24' />
+            <column datatype='integer' name='days_in_waiting_list' ordinal='25' />
+            <column datatype='string' name='customer_type' ordinal='26' />
+            <column datatype='real' name='adr' ordinal='27' />
+            <column datatype='integer' name='required_car_parking_spaces' ordinal='28' />
+            <column datatype='integer' name='total_of_special_requests' ordinal='29' />
+            <column datatype='string' name='reservation_status' ordinal='30' />
+            <column datatype='date' name='reservation_status_date' ordinal='31' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hotel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hotel]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>hotel</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_canceled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_canceled]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>is_canceled</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lead_time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lead_time]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>lead_time</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_year]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>arrival_date_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[arrival_date_month]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>arrival_date_month</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_week_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_week_number]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>arrival_date_week_number</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_day_of_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_day_of_month]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>arrival_date_day_of_month</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stays_in_weekend_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stays_in_weekend_nights]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>stays_in_weekend_nights</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stays_in_week_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stays_in_week_nights]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>stays_in_week_nights</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adults</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adults]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>adults</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[children]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>children</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>babies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[babies]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>babies</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[meal]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>meal</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[market_segment]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>market_segment</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distribution_channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[distribution_channel]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>distribution_channel</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_repeated_guest</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_repeated_guest]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>is_repeated_guest</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous_cancellations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous_cancellations]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>previous_cancellations</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous_bookings_not_canceled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous_bookings_not_canceled]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>previous_bookings_not_canceled</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reserved_room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reserved_room_type]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>reserved_room_type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assigned_room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[assigned_room_type]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>assigned_room_type</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_changes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[booking_changes]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>booking_changes</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deposit_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deposit_type]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>deposit_type</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[agent]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>agent</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_in_waiting_list</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_in_waiting_list]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>days_in_waiting_list</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_type]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>customer_type</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[adr]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>adr</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>required_car_parking_spaces</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[required_car_parking_spaces]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>required_car_parking_spaces</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_of_special_requests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_of_special_requests]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>total_of_special_requests</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reservation_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reservation_status]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>reservation_status</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reservation_status_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[reservation_status_date]</local-name>
+            <parent-name>[hotel_bookings.csv]</parent-name>
+            <remote-alias>reservation_status_date</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Arrival month' datatype='integer' name='[Calculation_672654858999537776]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [arrival_date_month]&#10;WHEN &apos;January&apos; THEN 1&#10;WHEN &apos;February&apos; THEN 2&#10;WHEN &apos;March&apos; THEN 3&#10;WHEN &apos;April&apos; THEN 4&#10;WHEN &apos;May&apos; THEN 5&#10;WHEN &apos;June&apos; THEN 6&#10;WHEN &apos;July&apos; THEN 7&#10;WHEN &apos;August&apos; THEN 8&#10;WHEN &apos;September&apos; THEN 9&#10;WHEN &apos;October&apos; THEN 10&#10;WHEN &apos;November&apos; THEN 11&#10;WHEN &apos;December&apos; THEN 12&#10;END' />
+      </column>
+      <column caption='Arrival date' datatype='date' name='[Calculation_672654859003027569]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKEDATE([arrival_date_year],[Calculation_672654858999537776],[arrival_date_day_of_month])' />
+      </column>
+      <column caption='is cancelled yes' datatype='integer' name='[Calculation_672654859007651954]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [is_canceled]=1 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='is cancelled No' datatype='integer' name='[Calculation_672654859008295027]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [is_canceled]=0 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Stays in week' datatype='integer' name='[Calculation_672654859031122036]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[stays_in_week_nights]+[stays_in_weekend_nights]' />
+      </column>
+      <column caption='Ones' datatype='integer' name='[Calculation_672654859042381946]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='hotel_bookings.csv' datatype='table' name='[__tableau_internal_object_id__].[hotel_bookings.csv_38A82D6B992D4E69AAE172C22E334781]' role='measure' type='quantitative' />
+      <column caption='Adr' datatype='real' name='[adr]' role='measure' type='quantitative' />
+      <column caption='Adults' datatype='integer' name='[adults]' role='measure' type='quantitative' />
+      <column caption='Agent' datatype='integer' name='[agent]' role='measure' type='quantitative' />
+      <column caption='Arrival Date Day Of Month' datatype='integer' name='[arrival_date_day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+      <column caption='Arrival Date Week Number' datatype='integer' name='[arrival_date_week_number]' role='dimension' type='ordinal' />
+      <column caption='Arrival Date Year' datatype='integer' name='[arrival_date_year]' role='dimension' type='quantitative' />
+      <column caption='Assigned Room Type' datatype='string' name='[assigned_room_type]' role='dimension' type='nominal' />
+      <column caption='Babies' datatype='integer' name='[babies]' role='measure' type='quantitative' />
+      <column caption='Booking Changes' datatype='integer' name='[booking_changes]' role='measure' type='quantitative' />
+      <column caption='Children' datatype='integer' name='[children]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='integer' name='[company]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Type' datatype='string' name='[customer_type]' role='dimension' type='nominal' />
+      <column caption='Days In Waiting List' datatype='integer' name='[days_in_waiting_list]' role='measure' type='quantitative' />
+      <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+      <column caption='Distribution Channel' datatype='string' name='[distribution_channel]' role='dimension' type='nominal' />
+      <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+      <column caption='Is Canceled' datatype='integer' name='[is_canceled]' role='measure' type='quantitative' />
+      <column caption='Is Repeated Guest' datatype='integer' name='[is_repeated_guest]' role='measure' type='quantitative' />
+      <column caption='Lead Time' datatype='integer' name='[lead_time]' role='measure' type='quantitative' />
+      <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+      <column caption='Meal' datatype='string' name='[meal]' role='dimension' type='nominal' />
+      <column caption='Previous Bookings Not Canceled' datatype='integer' name='[previous_bookings_not_canceled]' role='measure' type='quantitative' />
+      <column caption='Previous Cancellations' datatype='integer' name='[previous_cancellations]' role='measure' type='quantitative' />
+      <column caption='Required Car Parking Spaces' datatype='integer' name='[required_car_parking_spaces]' role='measure' type='quantitative' />
+      <column caption='Reservation Status' datatype='string' name='[reservation_status]' role='dimension' type='nominal' />
+      <column caption='Reservation Status Date' datatype='date' name='[reservation_status_date]' role='dimension' type='ordinal' />
+      <column caption='Reserved Room Type' datatype='string' name='[reserved_room_type]' role='dimension' type='nominal' />
+      <column caption='Stays In Week Nights' datatype='integer' name='[stays_in_week_nights]' role='measure' type='quantitative' />
+      <column caption='Stays In Weekend Nights' datatype='integer' name='[stays_in_weekend_nights]' role='measure' type='quantitative' />
+      <column caption='Total Of Special Requests' datatype='integer' name='[total_of_special_requests]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[market_segment]' derivation='None' name='[none:market_segment:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_672654859007651954]' derivation='Sum' name='[sum:Calculation_672654859007651954:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_672654859008295027]' derivation='Sum' name='[sum:Calculation_672654859008295027:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[stays_in_week_nights]' derivation='Sum' name='[sum:stays_in_week_nights:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[stays_in_weekend_nights]' derivation='Sum' name='[sum:stays_in_weekend_nights:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:market_segment:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aviation&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Groups&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Direct&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Online TA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Corporate&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Offline TA/TO&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Complementary&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Undefined&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:Calculation_672654859008295027:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:stays_in_weekend_nights:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:stays_in_week_nights:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:Calculation_672654859007651954:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;USA&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='hotel_bookings.csv' id='hotel_bookings.csv_38A82D6B992D4E69AAE172C22E334781'>
+            <properties context=''>
+              <relation connection='textscan.0g5he2x0egmsel10zf7pl1s0488s' name='hotel_bookings.csv' table='[hotel_bookings#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='hotel' ordinal='0' />
+                  <column datatype='integer' name='is_canceled' ordinal='1' />
+                  <column datatype='integer' name='lead_time' ordinal='2' />
+                  <column datatype='integer' name='arrival_date_year' ordinal='3' />
+                  <column datatype='string' name='arrival_date_month' ordinal='4' />
+                  <column datatype='integer' name='arrival_date_week_number' ordinal='5' />
+                  <column datatype='integer' name='arrival_date_day_of_month' ordinal='6' />
+                  <column datatype='integer' name='stays_in_weekend_nights' ordinal='7' />
+                  <column datatype='integer' name='stays_in_week_nights' ordinal='8' />
+                  <column datatype='integer' name='adults' ordinal='9' />
+                  <column datatype='integer' name='children' ordinal='10' />
+                  <column datatype='integer' name='babies' ordinal='11' />
+                  <column datatype='string' name='meal' ordinal='12' />
+                  <column datatype='string' name='country' ordinal='13' />
+                  <column datatype='string' name='market_segment' ordinal='14' />
+                  <column datatype='string' name='distribution_channel' ordinal='15' />
+                  <column datatype='integer' name='is_repeated_guest' ordinal='16' />
+                  <column datatype='integer' name='previous_cancellations' ordinal='17' />
+                  <column datatype='integer' name='previous_bookings_not_canceled' ordinal='18' />
+                  <column datatype='string' name='reserved_room_type' ordinal='19' />
+                  <column datatype='string' name='assigned_room_type' ordinal='20' />
+                  <column datatype='integer' name='booking_changes' ordinal='21' />
+                  <column datatype='string' name='deposit_type' ordinal='22' />
+                  <column datatype='integer' name='agent' ordinal='23' />
+                  <column datatype='integer' name='company' ordinal='24' />
+                  <column datatype='integer' name='days_in_waiting_list' ordinal='25' />
+                  <column datatype='string' name='customer_type' ordinal='26' />
+                  <column datatype='real' name='adr' ordinal='27' />
+                  <column datatype='integer' name='required_car_parking_spaces' ordinal='28' />
+                  <column datatype='integer' name='total_of_special_requests' ordinal='29' />
+                  <column datatype='string' name='reservation_status' ordinal='30' />
+                  <column datatype='date' name='reservation_status_date' ordinal='31' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <repository-location id='Sheet1' path='/t/poojitha/workbooks/HotelBookings' revision='' site='poojitha' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Cancelled and Non-Cancelled Bookings of City and Resort Hotels</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hotel_bookings' name='federated.1czcpkf16xq75i10oq6kv12n12gn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1czcpkf16xq75i10oq6kv12n12gn'>
+            <column caption='is cancelled yes' datatype='integer' name='[Calculation_672654859007651954]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [is_canceled]=1 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='is cancelled No' datatype='integer' name='[Calculation_672654859008295027]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [is_canceled]=0 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column caption='Is Canceled' datatype='integer' name='[is_canceled]' role='measure' type='quantitative' />
+            <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market_segment]' derivation='None' name='[none:market_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_672654859007651954]' derivation='Sum' name='[sum:Calculation_672654859007651954:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_672654859008295027]' derivation='Sum' name='[sum:Calculation_672654859008295027:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:Calculation_672654859008295027:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:Calculation_672654859007651954:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]' value='Cancelled?'>
+              <formatted-text>
+                <run>Cancelled?</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1czcpkf16xq75i10oq6kv12n12gn].[Multiple Values]</rows>
+        <cols>([federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk] / ([federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk] / [federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{BAC5088B-9E1D-48D4-A50C-165FCE33E82E}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <repository-location id='Sheet2' path='/t/poojitha/workbooks/HotelBookings' revision='' site='poojitha' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>The revenue generated by the different segments of both the Hotels</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hotel_bookings' name='federated.1czcpkf16xq75i10oq6kv12n12gn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1czcpkf16xq75i10oq6kv12n12gn'>
+            <column caption='Adr' datatype='real' name='[adr]' role='measure' type='quantitative' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market_segment]' derivation='None' name='[none:market_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[adr]' derivation='Sum' name='[sum:adr:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:adr:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]</rows>
+        <cols>([federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk] * [federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:adr:qk])</cols>
+      </table>
+      <simple-id uuid='{E26BF3DA-5E4F-4EB9-B118-15028AE0C529}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <repository-location id='Sheet3' path='/t/poojitha/workbooks/HotelBookings' revision='' site='poojitha' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Demand Forecast of both the Hotels by confirmed Bookings</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hotel_bookings' name='federated.1czcpkf16xq75i10oq6kv12n12gn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1czcpkf16xq75i10oq6kv12n12gn'>
+            <column caption='Arrival month' datatype='integer' name='[Calculation_672654858999537776]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [arrival_date_month]&#10;WHEN &apos;January&apos; THEN 1&#10;WHEN &apos;February&apos; THEN 2&#10;WHEN &apos;March&apos; THEN 3&#10;WHEN &apos;April&apos; THEN 4&#10;WHEN &apos;May&apos; THEN 5&#10;WHEN &apos;June&apos; THEN 6&#10;WHEN &apos;July&apos; THEN 7&#10;WHEN &apos;August&apos; THEN 8&#10;WHEN &apos;September&apos; THEN 9&#10;WHEN &apos;October&apos; THEN 10&#10;WHEN &apos;November&apos; THEN 11&#10;WHEN &apos;December&apos; THEN 12&#10;END' />
+            </column>
+            <column caption='Arrival date' datatype='date' name='[Calculation_672654859003027569]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='MAKEDATE([arrival_date_year],[Calculation_672654858999537776],[arrival_date_day_of_month])' />
+            </column>
+            <column caption='is cancelled No' datatype='integer' name='[Calculation_672654859008295027]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [is_canceled]=0 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Arrival Date Day Of Month' datatype='integer' name='[arrival_date_day_of_month]' role='dimension' type='quantitative' />
+            <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+            <column caption='Arrival Date Year' datatype='integer' name='[arrival_date_year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_672654859008295027]' derivation='Sum' forecast-column-base='[sum:Calculation_672654859008295027:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Calculation_672654859008295027:qk]' pivot='key' type='quantitative' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column caption='Is Canceled' datatype='integer' name='[is_canceled]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_672654859003027569]' derivation='Month' name='[mn:Calculation_672654859003027569:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_672654859003027569]' derivation='Quarter' name='[qr:Calculation_672654859003027569:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_672654859008295027]' derivation='Sum' name='[sum:Calculation_672654859008295027:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_672654859003027569]' derivation='Year' name='[yr:Calculation_672654859003027569:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[fVal:sum:Calculation_672654859008295027:qk]' />
+              <color column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.84579998254776001' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk] * [federated.1czcpkf16xq75i10oq6kv12n12gn].[fVal:sum:Calculation_672654859008295027:qk])</rows>
+        <cols>([federated.1czcpkf16xq75i10oq6kv12n12gn].[yr:Calculation_672654859003027569:ok] / ([federated.1czcpkf16xq75i10oq6kv12n12gn].[qr:Calculation_672654859003027569:ok] / [federated.1czcpkf16xq75i10oq6kv12n12gn].[mn:Calculation_672654859003027569:ok]))</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{AA4F43EE-01B8-4676-975E-2260F65BCB4E}' />
+    </worksheet>
+    <worksheet name='Sheet 3 (2)'>
+      <repository-location id='Sheet32' path='/t/poojitha/workbooks/HotelBookings' revision='' site='poojitha' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Forecasting Demand by confirmed bookings of Direct,Online TA,Offline TA segments of both the Hotels</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hotel_bookings' name='federated.1czcpkf16xq75i10oq6kv12n12gn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1czcpkf16xq75i10oq6kv12n12gn'>
+            <column caption='Arrival month' datatype='integer' name='[Calculation_672654858999537776]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [arrival_date_month]&#10;WHEN &apos;January&apos; THEN 1&#10;WHEN &apos;February&apos; THEN 2&#10;WHEN &apos;March&apos; THEN 3&#10;WHEN &apos;April&apos; THEN 4&#10;WHEN &apos;May&apos; THEN 5&#10;WHEN &apos;June&apos; THEN 6&#10;WHEN &apos;July&apos; THEN 7&#10;WHEN &apos;August&apos; THEN 8&#10;WHEN &apos;September&apos; THEN 9&#10;WHEN &apos;October&apos; THEN 10&#10;WHEN &apos;November&apos; THEN 11&#10;WHEN &apos;December&apos; THEN 12&#10;END' />
+            </column>
+            <column caption='Arrival date' datatype='date' name='[Calculation_672654859003027569]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='MAKEDATE([arrival_date_year],[Calculation_672654858999537776],[arrival_date_day_of_month])' />
+            </column>
+            <column caption='is cancelled No' datatype='integer' name='[Calculation_672654859008295027]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [is_canceled]=0 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Arrival Date Day Of Month' datatype='integer' name='[arrival_date_day_of_month]' role='dimension' type='quantitative' />
+            <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+            <column caption='Arrival Date Year' datatype='integer' name='[arrival_date_year]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_672654859008295027]' derivation='Sum' forecast-column-base='[sum:Calculation_672654859008295027:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Calculation_672654859008295027:qk]' pivot='key' type='quantitative' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column caption='Is Canceled' datatype='integer' name='[is_canceled]' role='measure' type='quantitative' />
+            <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market_segment]' derivation='None' name='[none:market_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_672654859008295027]' derivation='Sum' name='[sum:Calculation_672654859008295027:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_672654859003027569]' derivation='Month-Trunc' name='[tmn:Calculation_672654859003027569:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:market_segment:nk]' member='&quot;Direct&quot;' />
+              <groupfilter function='member' level='[none:market_segment:nk]' member='&quot;Offline TA/TO&quot;' />
+              <groupfilter function='member' level='[none:market_segment:nk]' member='&quot;Online TA&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1czcpkf16xq75i10oq6kv12n12gn].[fVal:sum:Calculation_672654859008295027:qk]' scope='rows' value='Confirmed Bookings' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk] * [federated.1czcpkf16xq75i10oq6kv12n12gn].[fVal:sum:Calculation_672654859008295027:qk])</rows>
+        <cols>[federated.1czcpkf16xq75i10oq6kv12n12gn].[tmn:Calculation_672654859003027569:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{9ACC9E77-6605-4970-A805-E924E16DDC35}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <repository-location id='Sheet5' path='/t/poojitha/workbooks/HotelBookings' revision='' site='poojitha' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Stays in week nights and weekend nights of City Hotel and Resort Hotel by Online TA segment</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hotel_bookings' name='federated.1czcpkf16xq75i10oq6kv12n12gn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1czcpkf16xq75i10oq6kv12n12gn'>
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market_segment]' derivation='None' name='[none:market_segment:nk]' pivot='key' type='nominal' />
+            <column caption='Stays In Week Nights' datatype='integer' name='[stays_in_week_nights]' role='measure' type='quantitative' />
+            <column caption='Stays In Weekend Nights' datatype='integer' name='[stays_in_weekend_nights]' role='measure' type='quantitative' />
+            <column-instance column='[stays_in_week_nights]' derivation='Sum' name='[sum:stays_in_week_nights:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stays_in_weekend_nights]' derivation='Sum' name='[sum:stays_in_weekend_nights:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:stays_in_week_nights:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:stays_in_weekend_nights:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]'>
+            <groupfilter function='member' level='[none:market_segment:nk]' member='&quot;Online TA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]</column>
+            <column>[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1czcpkf16xq75i10oq6kv12n12gn].[Multiple Values]</rows>
+        <cols>([federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk] / ([federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk] / [federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{44669DAD-01F2-4BC1-96D2-3891C6F78F96}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <repository-location id='Sheet6' path='/t/poojitha/workbooks/HotelBookings' revision='' site='poojitha' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bookings Confirmed in months of both the Hotels</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hotel_bookings' name='federated.1czcpkf16xq75i10oq6kv12n12gn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1czcpkf16xq75i10oq6kv12n12gn'>
+            <column caption='Ones' datatype='integer' name='[Calculation_672654859042381946]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+            <column-instance column='[arrival_date_month]' derivation='None' name='[none:arrival_date_month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market_segment]' derivation='None' name='[none:market_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_672654859042381946]' derivation='Sum' name='[sum:Calculation_672654859042381946:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]'>
+            <groupfilter function='member' level='[none:market_segment:nk]' member='&quot;Online TA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:Calculation_672654859042381946:qk]' scope='rows' value='Bookings' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:Calculation_672654859042381946:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#9d7660' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>(([federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk] / [federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]) * [federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:Calculation_672654859042381946:qk])</rows>
+        <cols>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:arrival_date_month:nk]</cols>
+      </table>
+      <simple-id uuid='{DF66110F-30CB-4CE7-9A39-2353B1DF2D52}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[yr:Calculation_672654858998767727:ok]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[yr:Calculation_672654859003027569:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{085D70A5-F830-4A4C-8218-BC0E3FFF9407}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{98927284-D8A0-4739-84BA-DE1C19221AA5}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[yr:Calculation_672654859003027569:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{86FA4E95-EC38-49B1-81F2-DBF0D65FAEB8}' />
+    </window>
+    <window class='worksheet' name='Sheet 3 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[yr:Calculation_672654859003027569:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D956A520-3C27-4B38-8B0D-AB1A827C3962}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[:Measure Names]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:arrival_date_week_number:ok]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[yr:Calculation_672654859003027569:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DA788AA9-70E4-4CAF-A0D4-BC59FCB86557}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1czcpkf16xq75i10oq6kv12n12gn].[sum:Calculation_672654859042381946:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:Calculation_672654859037495415:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:arrival_date_day_of_month:qk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:arrival_date_month:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:hotel:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[none:market_segment:nk]</field>
+            <field>[federated.1czcpkf16xq75i10oq6kv12n12gn].[yr:Calculation_672654859003027569:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{70846BDC-C7E8-4E0B-8DE3-CB3F50ADB58F}' />
+    </window>
+  </windows>
+</workbook>
