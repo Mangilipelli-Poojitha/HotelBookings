@@ -4,7 +4,7 @@
 This Tableau analysis project explores the Hotel Bookings dataset from Kaggle. The dataset contains information about hotel bookings, including details about the guests, booking times, and hotel types. The goal of this analysis is to gain insights into booking trends, occupancy rates, and customer preferences. And to get the information about when is the best time to book a hotel in a year.
 
 ## Dataset
-The dataset used for this analysis can be found on Kaggle. You can get also get it [here](Dataset).
+The dataset used for this analysis can be found on Kaggle. You can get also get it [here](hotel_bookings.csv).
 
 ## Tableau Visualizations
 The project includes several Tableau visualizations that provide valuable insights into the dataset. Here are some of the key visualizations:
@@ -29,19 +29,3 @@ To use this project and explore the Tableau visualizations:
 ## Insights
 1. The best time of the year to book a hotel at City Hotel is September to February and at Resort Hotel is September to June.
 2. Weekend nigths are mostly preferred to book at City Hotel and Resort Hotel.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
