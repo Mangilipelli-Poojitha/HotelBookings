@@ -17,7 +17,7 @@ The project includes several Tableau visualizations that provide valuable insigh
 6. Booking Trends: Visualizations depicting booking trends over time, such as monthly booking counts and seasonal variations.
 
 ## Tableau Workbook
-The Tableau workbook used for this analysis is available in the [workbook](New Workbook.twb) directory. You can download and open it with Tableau Desktop to explore the visualizations and interact with the data.
+The Tableau workbook used for this analysis is available in the [workbook](Workbook.twb) directory. You can download and open it with Tableau Desktop to explore the visualizations and interact with the data.
 
 ## Usage
 To use this project and explore the Tableau visualizations:
